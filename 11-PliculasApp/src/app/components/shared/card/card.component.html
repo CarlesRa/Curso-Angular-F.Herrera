@@ -1,0 +1,12 @@
+<div class="card-columns">
+  <div class="card radius pointer" *ngFor="let pelicula of peliculas" (click)="verDetallePelicula(pelicula.id)">
+    <img [src]="pelicula.poster_path | convertUrl" class="card-img-top img-fluid radius" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{pelicula.title}}</h5>
+      <p class="card-text">
+        Estreno
+        <small>({{ pelicula.release_date | date:'yyyy'}})</small>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="row mb-5 body-container">
+  <div class="col">
+    <button (click)="regresar()" class="btn btn-outline-danger">Regresar</button>
+  </div>
+
+  <div class="col-8">
+    <input #termino type="text" (keyup)="buscar(termino.value)" [(ngModel)]="term" class="form-control"
+      placeholder="Buscar Artista" name="term">
+
+  </div>
+
+  <div class="col">
+    <button (click)="buscar(term)" class="btn btn-outline-info">Buscar</button>
+  </div>
+
+</div>
+
+<app-card [peliculas]="peliculas"></app-card>

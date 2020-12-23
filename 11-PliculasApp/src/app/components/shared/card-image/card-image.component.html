@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-4" *ngFor="let pelicula of peliculas">
+    <div class="radius pointer">
+      <div class="image-card-container" (click)="verDetallePelicula(pelicula.id)">
+        <img [src]="pelicula.backdrop_path | convertUrl" class="card-img-top img-fluid radius">
+        <div class="text-block">
+          <h2>{{ pelicula.title }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

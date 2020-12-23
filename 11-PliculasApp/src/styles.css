@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+
+.body-container {
+  margin-top: 100px;
+}
+.radius {
+  border-radius: 10px;
+}
+
+.navbar-title {
+ font-size: 2rem;
+}
+
+.text-title {
+  font-size: 5rem;
+}
+
+.text-title-large {
+  font-size: 6rem;
+}
+
+.text-label {
+  font-size: 2rem;
+}
+
+.back-dark {
+  background-color: black;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.pointer:hover {
+  opacity: 0.7;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid white;
+  padding: 0;
+
+}
+
+.marco {
+  border: 2px solid white;
+}
+
+.image-poster {
+  height: 600px;
+  width: 400px;
+}
+
+/* Container holding the image and the text */
+.image-card-container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: large;
+}
+
+.toolbar-text {
+  font-size: 1.6rem;
+}
+
+.table-height {
+  height: 600px;
+}
